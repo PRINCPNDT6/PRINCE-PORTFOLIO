@@ -1,0 +1,258 @@
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+
+nav{
+    background-color: rgb(21, 18, 18);
+    /* border: 2px solid black; */
+    box-shadow: 0px 2px 1px #fff;
+    display: flex;
+    /* position: fixed; */
+    justify-content: space-between;
+    padding: 16px
+    
+
+}
+
+nav .rightnav{
+ 
+
+}
+
+nav .leftnav{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: underline;
+}
+
+
+/* हैम्बर्गर मेनू बटन */
+.menu-toggle {
+  position: fixed;
+  top: 5px;
+  /* left: 20px; */
+  cursor: pointer;
+  z-index: 1000;
+ margin-right:  100px; 
+}
+
+.menu-toggle .img{
+  width: 3px;
+
+}
+ 
+
+ 
+
+/* साइडबार मेनू */
+.sidebar {
+  position: fixed;
+  /* top: 0; */
+  right: -250px;
+  /* width: 150px; */
+  width: 40%;
+  /* height: 100%; */
+  background-color: white;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+  transition: 1.3s;
+  z-index: 999;
+  border-radius: 10px;
+  /* box-shadow: 3px #333; */
+  box-shadow: 1px 1px 14px #fff;
+}
+
+.sidebar.open {
+  right: 0;
+}
+
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.sidebar-content a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  margin: 15px 0;
+  transition: 0.3s;
+}
+
+.sidebar-content a:hover {
+  color: #007bff;
+}
+
+.sidebar-content button{
+    background-color: rgb(179, 179, 210);
+    color: #fff;
+    border:2px solid #333;
+    border-radius: 6px;
+    padding: 7px;
+    box-shadow: 1px 1px 14px #694de54d;
+}
+
+ /* === */
+
+ .desktop-menu {
+  display: flex;
+  gap: 30px;
+  position: sticky;
+}
+
+.menu-toggle,
+.sidebar {
+  display: none; /* desktop pe chhupao */
+}
+
+@media screen and (max-width: 768px) {
+  .desktop-menu {
+    display: none; /* mobile pe chhupao */
+  }
+
+  .menu-toggle,
+  .sidebar {
+    display: block;
+  }
+
+  .menu-toggle {
+    position: relative;
+    margin-right: 0;
+  }
+
+    .sidebar {
+    /* width: 70%; */
+    top: 60px;
+    /* height: calc(100vh - 60px); */
+  }  
+}
+
+nav .rightnav .desktop-menu{
+    font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  font-size: small;
+ 
+ 
+}
+ 
+nav .rightnav .desktop-menu a{
+    text-decoration: none;
+    color: #fff;
+}
+
+header .name-introH .Hii,
+.Iam{
+  /* margin-left: 30px; */
+  color:  #fff;
+  font: 1em sans-serif;
+  margin-top: 15px;
+  
+  font-size:  50px;;
+}
+
+header .name-introH .Hii{
+  margin-right: 20px;
+}
+header .name-introH .Iam{
+  padding-right: 130px;
+}
+
+header .name-introH{
+  /* border: 2px solid bisque; */
+  margin-top: 35px;
+  margin-left: 40px;
+}
+ 
+
+
+header .name-introH p{
+  color: #fff;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  /* margin-left: 40px; */
+}
+
+header .coding-intro{
+  /* border: 2px solid wheat; */
+  margin: 40px;
+  background-color: gray;
+  border-radius: 7px;
+  height: 400px;
+
+
+}
+
+
+
+header .coding-intro .flex{
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  background-color: #007bff;
+  border-radius: 7px;
+  /* border-bottom: 2px solid ; */
+
+}
+
+header .coding-intro .flex span{
+  margin-left: 10px; 
+  font-family:Arial, Helvetica, sans-serif;
+
+}
+
+
+
+header .coding-intro .flex .circle{
+  height: 10px;
+  width: 10px;
+  border-radius: 10px;
+  border: 2px solid black;
+  margin-top: 8px;
+  margin-bottom: 6px;
+  margin-left: 6px;
+  /* bor */
+}
+header .coding-intro .flex .blue{
+ background-color: blue;
+ border: 2px solid blue;
+}
+header .coding-intro .flex .yellow{
+ background-color: yellow;
+ border: 2px solid yellow;
+}
+header .coding-intro .flex .red{
+ background-color: red;
+ border: 2px solid red;
+}
+.list-container {
+  height: 372px; /* अपनी आवश्यकता अनुसार ऊँचाई सेट करें */
+  overflow-y: auto;
+  /* overflow: hidden; अतिरिक्त सामग्री छिपाने के लिए */
+  /* border: 2px solid #4CAF50;  */
+  /* padding: 10px; */
+  border-radius: 5px;
+  
+  /* background-color: #f9f9f9; */
+      background-color: rgb(28, 28, 39);
+      margin-left: 5px;
+
+      border-bottom: 1px solid gray;
+      color: #fff;
+}
+
+ .alpha-intro{
+  margin: 40px;
+  /* font-family:'Arial Narrow', Arial; */
+  color: #fff;
+  /* background-color: rgba(15, 7, 7, 0.155); */
+  padding: 10px;
+  border-radius: 7px;
+ }
+ 
+ .header-color{
+   background-color: rgb(28, 28, 39);
+   padding-bottom: 10px;
+
+ }
+ 
